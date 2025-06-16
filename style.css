@@ -3,8 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
+body{
+    height: 1000px;
+}
 header{
     width: 100vw;
     height: 100px;
@@ -32,7 +35,9 @@ header{
     }
     
     .cart{
-        margin: 20px;
+        margin: 40px;
+        position: sticky;
+        top: 0px;
 
         i{
             font-size: 30px;
@@ -46,11 +51,102 @@ header{
         height: 300px;
         background-color: rgb(0, 221, 99);
         position: absolute;
-        right: 60px;
+        right: 80px;
         top: 60px;
     }
 
     .stuff_cart.show{
         display: flex;
+    }
+}
+
+nav{
+    background-color: #838383;
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+
+    ul{
+        display: flex;
+        li{
+            display: flex;
+            list-style: none;
+            margin-right: 25px;
+            align-items: center;
+
+            a{
+                text-decoration: none;
+                color: #fff;
+            }
+            
+            a:visited{
+                font-size: larger;
+                font-weight: bold;
+                /* text-decoration: underline #fff; */
+            }
+
+            #login{
+                background: none;
+                border: none;
+                color: #fff;
+                cursor: pointer;
+            }
+            
+
+            .submit{ 
+                background: none;
+                border: none;
+                color: #fff;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            
+            form{
+                display: flex;
+
+                #search-box{
+                    display: none;
+                    padding: 5px;
+                    border-radius: 10px ;
+                    width: 300px;
+                    border: none;
+                }
+
+                #submit{
+                    display: none;
+                    padding: 5px;
+                    border-radius: 5px ;
+                    border: none;
+                    background: none;
+                }
+            }
+            #search-box.show_search{
+                display: flex;
+            }
+            #submit.show_search{
+                display: flex;
+            }
+            
+            #search{
+                color: #fff;
+                cursor: pointer;
+                font-style: normal;
+            }
+            
+            i.show_search{
+                display: none;
+            }
+            
+        }
+
+        li:hover{
+            font-size: larger;
+            font-weight: bold;
+        }
+
     }
 }

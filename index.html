@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="logo">
-            <a href="#" target="_self">
+            <a href="index.html" target="_self">
                 <img src="https://cdn.pixabay.com/photo/2023/10/16/15/49/guy-fawkes-8319511_640.png" alt="">
                 <h1>SHOPPER</h1>
             </a>
@@ -20,9 +20,23 @@
 
         <div class="cart">
             <i class="fi fi-ts-cart-minus" onclick="toggle_cart()"></i>
-
             <div class="stuff_cart" id="stuff"></div>
         </div>
     </header>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html" target="_self">HOME</a></li>
+            <li><a href="#" target="_self">CONTRACT</a></li>
+            <li>
+                <i id="search" onclick="toggle_search()">SEARCH</i>
+                <form>
+                    <input type="search" placeholder="search..." id="search-box">
+                    <button type="submit" id="submit" onclick="toggle_search()">SUBMIT</button>
+                </form>
+            </li>
+            <li><a href="login.html" target="_blank" id="login">LOGIN</a></li>
+        </ul>
+    </nav>
 </body>
 </html>

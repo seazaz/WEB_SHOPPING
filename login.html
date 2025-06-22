@@ -7,42 +7,56 @@
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <div class="card">
+    <div class="card" id="register">
         <h1>Register</h1>
         <ul>
-            <li><a href="#"><img src="https://placehold.co/30x30" alt=""></a></l1>
-            <li><a href="#"><img src="https://placehold.co/30x30" alt=""></a></l1>
-            <li><a href="#"><img src="https://placehold.co/30x30" alt=""></a></l1>
+            <li><a href="#"><img src="https://placehold.co/30x30" alt=""></a></li>
+            <li><a href="#"><img src="https://placehold.co/30x30" alt=""></a></li>
+            <li><a href="#"><img src="https://placehold.co/30x30" alt=""></a></li>
         </ul>
-        <div class="input-box">
-            <input type="text">
-            <label for="username">Username</label>
-        </div>
-        <div class="input-box">
-            <input type="email">
-            <label for="email">Email</label>
-        </div>
-        <div class="input-box">
-            <input type="password">
-            <label for="password">Password</label>
-        </div>
+        <form>
+            <div class="input-box">
+                <input type="text" required>
+                <label for="username">Username</label>
+            </div>
+            <div class="input-box">
+                <input type="email" required>
+                <label for="email">Email</label>
+            </div>
+            <div class="input-box">
+                <input type="password" required>
+                <label for="password">Password</label>
+            </div>
+            <div class="submit">
+                <button>SUBMIT</button>
+            </div>
+            <button class="next_page" onclick="toggle_page()">login</button>
+        </form>
     </div>
-    <div class="card">
+    <div class="card" id="login">
         <h1>Login</h1>
         <ul>
-            <li><a href="#"><img src="https://placehold.co/30x30" alt=""></a></l1>
-            <li><a href="#"><img src="https://placehold.co/30x30" alt=""></a></l1>
-            <li><a href="#"><img src="https://placehold.co/30x30" alt=""></a></l1>
+            <li><a href="#"><img src="https://placehold.co/30x30" alt=""></a></li>
+            <li><a href="#"><img src="https://placehold.co/30x30" alt=""></a></li>
+            <li><a href="#"><img src="https://placehold.co/30x30" alt=""></a></li>
         </ul>
-        <div class="input-box">
-            <input type="email">
-            <label for="email">Email</label>
-        </div>
-        <div class="input-box">
-            <input type="password">
-            <label for="password">Password</label>
-        </div>
-        <span><input type="checkbox">Remember Me</span>
+        <form>
+            <div class="input-box">
+                <input type="email" required>
+                <label for="email">Email</label>
+            </div>
+            <div class="input-box">
+                <input type="password" required>
+                <label for="password">Password</label>
+            </div>
+            <div class="submit">
+                <button>SUBMIT</button>
+            </div>
+            <span><input type="checkbox">Remember Me</span>
+            <button class="next_page" onclick="toggle_page()">register</button>
+        </form>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

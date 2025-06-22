@@ -11,3 +11,10 @@ function toggle_search(){
     search_hide.classList.toggle("show_search")
     submit.classList.toggle("show_search")
 }
+
+function toggle_page(){
+    let login = document.getElementById("login")
+    let register = document.getElementById("register")
+    login.classList.toggle("next-page")
+    register.classList.toggle("next-page")
+}

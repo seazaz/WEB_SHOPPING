@@ -6,7 +6,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    height: 1000px;
+    height: 2000px;
 }
 header{
     width: 100vw;
@@ -36,7 +36,6 @@ header{
     
     .cart{
         margin: 40px;
-        position: sticky;
         top: 0px;
 
         i{
@@ -86,7 +85,6 @@ nav{
             a:visited{
                 font-size: larger;
                 font-weight: bold;
-                /* text-decoration: underline #fff; */
             }
 
             #login{
